@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+ul a  {
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+body {
+    background-color: aquamarine;
+}
+
+body nav ul li a {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(114, 76,209);
+    font-style: bold;
+    font-weight: 700;
+    letter-spacing: normal;
+    font-size: 16px;
+    padding-right: 20px;
+
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px 0px 10px ;
+    background-color: rgb(255, 255, 255);
+    position:fixed;
+    top:0;
+    width:100%;
+    
+
+
+}
+main{
+    background-color: rgb(255, 253, 251);
+}
+
+main div img {
+    margin-top: 300px;
+    
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(86,193,190);
+    font-style: bold;
+    font-weight: 800;
+    font-size: 50px;
+    padding: 198px 14px 10px 10px ;
+
+
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items:center;
+    
+
+}
+
+.productos{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: stretch;
+    justify-content: center;
+    padding: 40px 14px 40px 10px ;
+
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    font-weight: 800;
+    font-size: 20px;
+    
+
+
+}
+
+
+
+
+
+.img1 {
+   
+    grid-area: uno;
+    
+    
+    
+}
+.img2 {
+
+    
+    grid-area:dos; 
+}
+
+.img3 {
+    grid-area: tres; 
+}
+   
+.img4 {
+    
+    grid-area: cuatro; 
+}
+.img5 {
+   
+    grid-area: cinco; 
+}
+.img6 {
+    
+    grid-area: seis; 
+}
+.img7 {
+    
+    grid-area: siete; 
+}
+
+
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 3fr 3fr;
+    column-gap: 5px;
+    row-gap: 5px;
+    justify-self: center;
+    align-self: center;
+    justify-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    
+    
+    grid-template-areas: 
+    "uno dos tres cuatro "
+    "uno cinco seis siete" ;
+
+
+
+
+}
+
+section h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    font-style: bold;
+    font-weight: 800;
+    font-size:30px;
+    padding: 20px 14px 30px 20px ;
+    margin: 100px 0px 100px 0px;
+
+
+    background-image:url(../img/pattern.png);
+}
+
+.juguetes{
+    grid-area:a;
+}
+.juego {
+    grid-area: aa;
+}
+.baño {
+    grid-area: b;
+}
+.cui{
+    grid-area: bb;
+
+}
+.collar {
+    grid-area: c;
+}
+.paseo{
+    grid-area: cc;
+}
+.alimento{
+    grid-area: d;
+}
+.com{
+    grid-area: dd;
+}
+
+
+
+.asd {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr 50px;
+    grid-template-areas: 
+    " a b c d "
+    "aa bb cc dd";
+    align-content: space-between;
+    justify-items: center;
+
+}
+
+
+aside span {
+    font-family: "montserrat", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 30px;
+    color: black;
+    padding: 20px 14px 30px 20px ;
+    
+
+}
+
+
+
+footer {
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.vet {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 14px 30px 20px ;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aquamarine;
+}
+.title {
+    
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(86, 183, 180);
+    font-style: bold;
+    font-weight: 800;
+    font-size: 50px;
+    padding: 40px 10px 10px 10px ;
+
+}
+.icon {
+    margin-top: 50px;
+}
+ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.especialidades {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(0, 0, 0);
+    font-style: bold;
+    font-weight: 800;
+    font-size: 30px;
+    padding: 40px 10px 10px 10px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.list{
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(0, 0, 0);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 40px 10px 10px 10px ;
+}
+
+
+@media (max-width: 600px) {
+    
+    .galeria {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 2fr 2fr;
+        justify-items: center;
+        align-content: space-between;
+        max-width: 100%;
+        grid-template-areas: 
+        " dos tres"
+        "cuatro cinco"
+        "seis siete";
+    
+
+    
+    }
+    .img1 {
+        display: none;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position:fixed ;
+
+    }
+    
+    
+
+}
+
+
